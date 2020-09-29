@@ -3,6 +3,8 @@
  */
 const express = require('express');
 
+const port = process.env.PORT || 8080 
+
 /**
  * Precisamos de cors para não termos problemas
  * de acesso à API
@@ -195,7 +197,7 @@ app.get('/votes', (_, res) => {
  * Iniciando o servidor
  * na porta 8080
  */
-app.listen(8080);
+app.listen(port);
 
 /**
  * Execução inicial
