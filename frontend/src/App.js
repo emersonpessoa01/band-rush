@@ -51,7 +51,7 @@ export default class App extends Component {
     return (
       <div className="container">
         {/* <Header title="Votação" /> */}
-        <Header>Índice de popularidade de Hollywood</Header>
+        <Header>Índice de popularidade em Hollywood</Header>
         <Candidates previousPercentages={previousPercentages} previousVotes={previousVotes} candidates={candidates} />
       </div>
     );
