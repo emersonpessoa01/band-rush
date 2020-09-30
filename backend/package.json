@@ -1,5 +1,4 @@
 {
-  "homepage": "http://emersonpessoa01.githib.io/react-family-ane",
   "name": "backend",
   "version": "1.0.0",
   "description": "",
@@ -7,8 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
