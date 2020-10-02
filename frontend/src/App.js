@@ -39,7 +39,7 @@ export default function App() {
   }
   return (
     <div className="container">
-      <Header>Votação</Header>
+      <Header>Índice de popularidade de Hollywood</Header>
       <Candidates previousPercentages={previousPercentages} previousVotes={previousVotes} candidates={candidates} />
     </div>
   );

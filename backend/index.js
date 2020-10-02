@@ -58,7 +58,7 @@ function fillCandidates() {
   candidates = [
     {
       id: 1,
-      name: 'Marco Minnemann',
+      name: 'Mamãe',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
@@ -67,7 +67,7 @@ function fillCandidates() {
 
     {
       id: 2,
-      name: 'Mike Portnoy',
+      name: 'Rosangela Pessoa',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
@@ -76,7 +76,31 @@ function fillCandidates() {
 
     {
       id: 3,
-      name: 'Neil Peart',
+      name: 'Rose Ane Pessoa',
+      votes: 0,
+      previousVotes: 0,
+      percentage: 0,
+      popularity: CONSTS.MIN_POPULARITY,
+    },
+    {
+      id: 4,
+      name: 'Naldo Cunha',
+      votes: 0,
+      previousVotes: 0,
+      percentage: 0,
+      popularity: CONSTS.MIN_POPULARITY,
+    },
+    {
+      id: 5,
+      name: 'Viviane Cunha',
+      votes: 0,
+      previousVotes: 0,
+      percentage: 0,
+      popularity: CONSTS.MIN_POPULARITY,
+    },
+    {
+      id: 6,
+      name: 'Manuzinhah',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
