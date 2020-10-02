@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:wght@300;400;700&family=Righteous&display=swap");
+
+.header {
+  text-align: center;
+  font-family: "Righteous", sans-serif;
+  color: #000066;
+  /* color: rgb(4,2,98); */
+
+}
