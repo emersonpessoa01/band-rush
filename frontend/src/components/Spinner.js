@@ -17,7 +17,7 @@ export default function Spinner({ description }) {
           </div>
         </div>
       </div>
-      <div style={{fontSize:"1.5rem", marginLeft:"25px"}}>{description}</div>
+      <div style={{fontSize:"1.5rem", marginLeft:"15  px"}}>{description}</div>
     </div>
   );
 }

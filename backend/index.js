@@ -3,8 +3,6 @@
  */
 const express = require('express');
 
-const port = process.env.PORT || 8080 
-
 /**
  * Precisamos de cors para não termos problemas
  * de acesso à API
@@ -60,7 +58,7 @@ function fillCandidates() {
   candidates = [
     {
       id: 1,
-      name: 'Mamãe',
+      name: 'Marco Minnemann',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
@@ -69,7 +67,7 @@ function fillCandidates() {
 
     {
       id: 2,
-      name: 'Rose Ane Pessoa',
+      name: 'Mike Portnoy',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
@@ -78,31 +76,7 @@ function fillCandidates() {
 
     {
       id: 3,
-      name: 'Rosangela Pessoa',
-      votes: 0,
-      previousVotes: 0,
-      percentage: 0,
-      popularity: CONSTS.MIN_POPULARITY,
-    },
-    {
-      id: 4,
-      name: 'Naldo Cunha',
-      votes: 0,
-      previousVotes: 0,
-      percentage: 0,
-      popularity: CONSTS.MIN_POPULARITY,
-    },
-    {
-      id: 5,
-      name: 'Viviane Cunha',
-      votes: 0,
-      previousVotes: 0,
-      percentage: 0,
-      popularity: CONSTS.MIN_POPULARITY,
-    },
-    {
-      id: 6,
-      name: 'Manuzinhah',
+      name: 'Neil Peart',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
@@ -197,7 +171,7 @@ app.get('/votes', (_, res) => {
  * Iniciando o servidor
  * na porta 8080
  */
-app.listen(port);
+app.listen(8080);
 
 /**
  * Execução inicial
