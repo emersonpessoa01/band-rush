@@ -28,7 +28,7 @@ jobs:
     - name: Install Dependencies
       run: npm install
       
-    - name: backend
+    - name: react-family
       run: npm run build  
        
     - name: Stop pm2
