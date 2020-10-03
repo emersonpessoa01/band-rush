@@ -27,9 +27,14 @@ jobs:
       
     - name: Install Dependencies
       run: npm install
+      
+    - name: Build Project
+      run: npm run build  
+       
+    - name: Stop pm2
+      run: pm2 stop nodedeploy
+      if: ${{failure()}}
     
-    - name: npm install, build and test
-      run: |
-        npm install
-        npm run build --if-present
-        npm test
+    - name: Start pm2
+      run: pm2 start backend/index.js --name nodeploy
+
