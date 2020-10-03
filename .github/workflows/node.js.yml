@@ -28,7 +28,7 @@ jobs:
     - name: Install Dependencies
       run: npm install
       
-    - name: Build Project
+    - name: backend
       run: npm run build  
        
     - name: Stop pm2
