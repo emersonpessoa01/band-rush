@@ -2,8 +2,12 @@
 
 .header {
   text-align: center;
-  font-family: "Righteous", sans-serif;
   color: #000066;
+  font-family: Righteous, sans-serif;
   /* color: rgb(4,2,98); */
+  text-align: center;
 
+}
+.star{
+  color: #ffbf00
 }
