@@ -195,7 +195,7 @@ app.get('/votes', (_, res) => {
  * Iniciando o servidor
  * na porta 8080
  */
-app.listen("https://dashboard.heroku.com/apps/react-family");
+app.listen(process.env.PORT || 8080);
 
 /**
  * Execução inicial
