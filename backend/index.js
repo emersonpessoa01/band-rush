@@ -30,8 +30,8 @@ let candidates = [];
  * Intervals que serão executados
  * a cada x intervalo de tempo
  */
-let intervalVotes = null;
-let intervalPopularity = null;
+// let intervalVotes = null;
+// let intervalPopularity = null;
 
 /**
  * Valores constantes importantes
@@ -117,7 +117,7 @@ const fillCandidates = () => {
 /**
  * Função para simular a votação
  */
-const simulateVoting = () => {
+function simulateVoting() {
   intervalVotes = setInterval(() => {
     candidates.forEach((candidate) => {
       const minVotes = CONSTS.MIN_VOTES;
@@ -129,7 +129,7 @@ const simulateVoting = () => {
       candidate.votes += votes;
     });
   }, CONSTS.INTERVAL_VOTES);
-};
+}
 
 /**
  * Função para simular a popularidade
