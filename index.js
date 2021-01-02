@@ -1,15 +1,13 @@
 /**
  * Precisamos do express para montar a API
  */
-// const express = require('express');
-import express from "express";
+import express from "express"
 
 /**
  * Precisamos de cors para não termos problemas
  * de acesso à API
  */
-// var cors = require('cors');
-import cors from "cors";
+import cors from 'cors'
 
 /**
  * Instanciando o app com express()
@@ -30,8 +28,8 @@ let candidates = [];
  * Intervals que serão executados
  * a cada x intervalo de tempo
  */
-// let intervalVotes = null;
-// let intervalPopularity = null;
+let intervalVotes = null;
+let intervalPopularity = null;
 
 /**
  * Valores constantes importantes
@@ -48,22 +46,19 @@ const CONSTS = {
 /**
  * Função para gerar números aleatórios
  */
-const generateRandomNumber = (
-  from = CONSTS.MIN_VOTES,
-  to = CONSTS.MAX_VOTES
-) => {
+function generateRandomNumber(from = CONSTS.MIN_VOTES, to = CONSTS.MAX_VOTES) {
   return Math.max(from, Math.ceil(Math.random() * to));
-};
+}
 
 /**
  * Função para montar estado
  * inicial dos candidatos
  */
-const fillCandidates = () => {
+function fillCandidates() {
   candidates = [
     {
       id: 1,
-      name: "Mamãe",
+      name: 'Rozilda Pessoa',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
@@ -72,7 +67,7 @@ const fillCandidates = () => {
 
     {
       id: 2,
-      name: "Rosangela Pessoa",
+      name: 'Rosangela Pessoa',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
@@ -81,7 +76,7 @@ const fillCandidates = () => {
 
     {
       id: 3,
-      name: "Rose Ane Pessoa",
+      name: 'Rose Ane Pessoa',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
@@ -89,7 +84,7 @@ const fillCandidates = () => {
     },
     {
       id: 4,
-      name: "Naldo Cunha",
+      name: 'Naldo Cunha',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
@@ -97,7 +92,7 @@ const fillCandidates = () => {
     },
     {
       id: 5,
-      name: "Viviane Cunha",
+      name: 'Viviane Cunha',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
@@ -105,14 +100,14 @@ const fillCandidates = () => {
     },
     {
       id: 6,
-      name: "Manuzinhah",
+      name: 'Manuzinhah Cunha',
       votes: 0,
       previousVotes: 0,
       percentage: 0,
       popularity: CONSTS.MIN_POPULARITY,
     },
   ];
-};
+}
 
 /**
  * Função para simular a votação
@@ -134,7 +129,7 @@ function simulateVoting() {
 /**
  * Função para simular a popularidade
  */
-const simulatePopularity = () => {
+function simulatePopularity() {
   intervalPopularity = setInterval(() => {
     candidates.forEach((candidate) => {
       candidate.popularity = generateRandomNumber(
@@ -145,23 +140,23 @@ const simulatePopularity = () => {
 
     console.log(candidates);
   }, CONSTS.INTERVAL_POPULARITY);
-};
+}
 
 /**
  * Rota padrão (/)
  */
-app.get("/", (_, res) => {
+app.get('/', (_, res) => {
   res.json({
     message:
-      "Bem-vindo ao módulo de votação!" +
-      "Acesse /votes para visualizar a votação em tempo real.",
+      'Bem-vindo ao módulo de votação!' +
+      'Acesse /votes para visualizar a votação em tempo real.',
   });
 });
 
 /**
  * Rota /votes
  */
-app.get("/votes", (_, res) => {
+app.get('/votes', (_, res) => {
   /**
    * Clonando objeto de votação e
    * realizando a ordenação a partir
@@ -200,7 +195,7 @@ app.get("/votes", (_, res) => {
  * Iniciando o servidor
  * na porta 8080
  */
-app.listen(process.env.PORT || 8080);
+app.listen(8080);
 
 /**
  * Execução inicial
