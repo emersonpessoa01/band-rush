@@ -28,8 +28,8 @@ let candidates = [];
  * Intervals que serão executados
  * a cada x intervalo de tempo
  */
-let intervalVotes = null;
-let intervalPopularity = null;
+// let intervalVotes = null;
+// let intervalPopularity = null;
 
 /**
  * Valores constantes importantes
@@ -193,9 +193,9 @@ app.get('/votes', (_, res) => {
 
 /**
  * Iniciando o servidor
- * na porta 8080
+ * na porta 3001
  */
-app.listen(8080);
+app.listen(3001);
 
 /**
  * Execução inicial
