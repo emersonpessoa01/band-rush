@@ -14,7 +14,7 @@ export default function App() {
 
       const res = await fetch("http://localhost:8080/votes");
       const json = await res.json();
-      // console.log(json); é substuido por: abaixo
+      // console.log(json); é substituido por: abaixo
 
       const localPreviousVotes = candidates.map(({ id, votes }) => {
         return { id, votes }
